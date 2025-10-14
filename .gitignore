@@ -1,0 +1,48 @@
+# ==========================
+# Node & Build Artifacts
+# ==========================
+node_modules/
+.build/
+dist/
+.svelte-kit/
+build/
+.output/
+
+# ==========================
+# Platform / Hosting Outputs
+# ==========================
+.vercel/
+.netlify/
+.wrangler/
+
+# ==========================
+# Environment Files
+# ==========================
+.env
+.env.*
+!.env.example
+!.env.test
+
+# ==========================
+# OS / Editor Junk
+# ==========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# ==========================
+# Vite / Temporary Files
+# ==========================
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+.cache/
+.tmp/
+
+# ==========================
+# Docker
+# ==========================
+# (Keep Dockerfile and docker-compose.yml, ignore local volumes)
+**/docker-data/
+**/tmp-data/
