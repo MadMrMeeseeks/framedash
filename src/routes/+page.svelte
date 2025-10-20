@@ -83,7 +83,11 @@
 		class="flex items-center justify-center relative"
 		style={`height:${bottomHeight}vh`}
 	>
-		<iframe src="/kuma/" class="absolute top-0 left-0 w-full h-full border-0"></iframe>
+		<iframe
+			src="http://kuma.local"
+			class="absolute top-0 left-0 w-full h-full border-0"
+			title="Uptime Kuma"
+		></iframe>
 
 	</section>
 </div>
