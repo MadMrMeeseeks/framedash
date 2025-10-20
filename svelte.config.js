@@ -10,6 +10,9 @@ const config = {
 			// disable strict mode so it won’t complain about “dynamic routes”
 			strict: false
 		}),
+		prerender: {
+			entries: []
+		},
 		alias: {
 			$lib: 'src/lib'
 		}
