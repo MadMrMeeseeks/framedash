@@ -7,11 +7,13 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-			// disable strict mode so it won’t complain about “dynamic routes”
 			strict: false
 		}),
 		prerender: {
-			entries: []
+			entries: [],       // disables prerendering
+			handleHttpError: 'warn', // prevent build failure if something 404s
+			handleMissingId: 'warn',
+			handleUnseenRoutes: 'ignore'
 		},
 		alias: {
 			$lib: 'src/lib'
